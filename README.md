@@ -1,1 +1,1 @@
-# MyLeetcode
+# MyLeetcode Pathway
