@@ -4,14 +4,14 @@ import java.util.List;
 
 //initial commitment
 public class LeetCode_17_Letter_Combinations_of_a_Phone_Number {
-    ArrayList<String> button2Characters = new ArrayList<String>(Arrays.asList("a", "b", "c"));
-    ArrayList<String> button3Characters = new ArrayList<String>(Arrays.asList("d", "e", "f"));
-    ArrayList<String> button4Characters = new ArrayList<String>(Arrays.asList("g", "h", "i"));
-    ArrayList<String> button5Characters = new ArrayList<String>(Arrays.asList("j", "k", "l"));
-    ArrayList<String> button6Characters = new ArrayList<String>(Arrays.asList("m", "n", "o"));
-    ArrayList<String> button7Characters = new ArrayList<String>(Arrays.asList("p", "q", "r", "s"));
-    ArrayList<String> button8Characters = new ArrayList<String>(Arrays.asList("t", "u", "v"));
-    ArrayList<String> button9Characters = new ArrayList<String>(Arrays.asList("w", "x", "y", "z"));
+    private static final ArrayList<String> button2Characters = new ArrayList<String>(Arrays.asList("a", "b", "c"));
+    private static final ArrayList<String> button3Characters = new ArrayList<String>(Arrays.asList("d", "e", "f"));
+    private static final ArrayList<String> button4Characters = new ArrayList<String>(Arrays.asList("g", "h", "i"));
+    private static final ArrayList<String> button5Characters = new ArrayList<String>(Arrays.asList("j", "k", "l"));
+    private static final ArrayList<String> button6Characters = new ArrayList<String>(Arrays.asList("m", "n", "o"));
+    private static final ArrayList<String> button7Characters = new ArrayList<String>(Arrays.asList("p", "q", "r", "s"));
+    private static final ArrayList<String> button8Characters = new ArrayList<String>(Arrays.asList("t", "u", "v"));
+    private static final ArrayList<String> button9Characters = new ArrayList<String>(Arrays.asList("w", "x", "y", "z"));
 
     public List<String> letterCombinations(String digits) {
 
