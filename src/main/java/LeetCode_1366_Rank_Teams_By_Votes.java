@@ -1,3 +1,5 @@
+package src.main.java;
+
 import java.util.*;
 
 public class LeetCode_1366_Rank_Teams_By_Votes {

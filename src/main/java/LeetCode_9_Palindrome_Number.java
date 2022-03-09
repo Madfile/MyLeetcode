@@ -1,3 +1,5 @@
+package src.main.java;
+
 public class LeetCode_9_Palindrome_Number {
     public boolean isPalindrome(int x) {
         String strValue = String.valueOf(x);

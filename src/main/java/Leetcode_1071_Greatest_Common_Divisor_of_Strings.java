@@ -1,3 +1,5 @@
+package src.main.java;
+
 public class Leetcode_1071_Greatest_Common_Divisor_of_Strings {
     public String gcdOfStrings(String str1, String str2) {
         int lengthOfGCD = getGCD(str1.length(), str2.length());

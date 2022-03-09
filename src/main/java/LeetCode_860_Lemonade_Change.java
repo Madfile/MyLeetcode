@@ -1,3 +1,5 @@
+package src.main.java;
+
 public class LeetCode_860_Lemonade_Change {
     public boolean lemonadeChange(int[] bills) {
         int fiveDollersChangeLeft = 0;
