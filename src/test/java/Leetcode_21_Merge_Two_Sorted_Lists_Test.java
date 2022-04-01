@@ -15,6 +15,6 @@ public class Leetcode_21_Merge_Two_Sorted_Lists_Test {
 
     @Test
     private void testMergeTwoLists() {
-        
+
     }
 }
