@@ -47,4 +47,5 @@ public class Leetcode_27_Remove_Element {
             }
         }
         return n;
+    }
 }
