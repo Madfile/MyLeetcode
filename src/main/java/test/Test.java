@@ -1,9 +1,6 @@
 package src.main.java.test;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
@@ -19,7 +16,6 @@ public class Test {
             System.out.println(queue.poll());
         }
 
-
         Map<String, String> map = new HashMap<String, String>();
         map.put("1", "one");
         String one = map.remove("1");
@@ -29,5 +25,6 @@ public class Test {
             System.out.println("empty");
         }
 
+        ArrayList<String> list = (ArrayList)Arrays.asList("a", "b", "c");
     }
 }
