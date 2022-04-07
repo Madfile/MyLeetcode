@@ -30,5 +30,7 @@ public class Test {
         int[] nums = new int[] {1,2,3,6,4,5};
         Arrays.sort(nums);
         System.out.println(Arrays.toString(nums));
+
+        System.out.println(5 / 2);
     }
 }
