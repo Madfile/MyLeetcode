@@ -26,6 +26,8 @@ public class Test {
         }
 
         ArrayList<String> list = new ArrayList(Arrays.asList("a", "b", "c"));
+        Collections.reverse(list);
+        Collections.sort(list);
 
         int[] nums = new int[] {1,2,3,6,4,5};
         Arrays.sort(nums);

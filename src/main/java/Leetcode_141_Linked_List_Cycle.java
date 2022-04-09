@@ -28,5 +28,5 @@ public class Leetcode_141_Linked_List_Cycle {
           val = x;
           next = null;
       }
-  }
+    }
 }
