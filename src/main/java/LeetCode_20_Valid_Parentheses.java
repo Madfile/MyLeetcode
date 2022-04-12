@@ -39,28 +39,30 @@ public class LeetCode_20_Valid_Parentheses {
 //        } else return null;
 //    }
 
-    Map<Character, Character> charMap = new HashMap<>();
-        charMap.put(')','(');
-        charMap.put(']','[');
-        charMap.put('}','{');
+        Map<Character, Character> charMap = new HashMap<>();
+        charMap.put(')', '(');
+        charMap.put(']', '[');
+        charMap.put('}', '{');
 
-    Deque<Character> stack = new ArrayDeque();
-        for (char c: s.toCharArray()) {
-        if (stack.size() == 0) {
-            stack.push(c);
-        } else if (charMap.get(c) != null && stack.peek() == charMap.get(c)) {
-            stack.poll();
-        } else {
-            stack.push(c);
+        Deque<Character> stack = new ArrayDeque();
+        for (char c : s.toCharArray()) {
+            if (stack.size() == 0) {
+                stack.push(c);
+            } else if (charMap.get(c) != null && stack.peek() == charMap.get(c)) {
+                stack.poll();
+            } else {
+                stack.push(c);
+            }
         }
-    }
 
         if (stack.size() != 0) {
-        return false;
-    }
+            return false;
+        }
 
         return true;
+    }
 }
+
 
 //optimal solution (use Stack)
 //public boolean isValid(String s) {
