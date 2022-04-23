@@ -5,6 +5,7 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<String>();
+//        Arrays.sort(new int[]{1,2,3,4});
 
         queue.add("1");
         queue.add("2");
