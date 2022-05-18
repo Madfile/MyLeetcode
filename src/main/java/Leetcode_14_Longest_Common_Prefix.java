@@ -1,10 +1,5 @@
 package src.main.java;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.sql.Array;
-
 public class Leetcode_14_Longest_Common_Prefix {
     //Original Solution
     public String longestCommonPrefix(String[] strs) {
@@ -34,13 +29,6 @@ public class Leetcode_14_Longest_Common_Prefix {
 
         return true;
     }
-
-    @Test
-    public void testMatchesAllSubstrings() {
-        Assert.assertTrue(matchesAllSubstrings('a', 0, new String[]{"a"}));
-    }
-
-    //Optimised Solutions
 
 }
 
