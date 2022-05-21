@@ -1,4 +1,4 @@
-public class Leecode_79_Word_Search {
+public class Leetcode_79_Word_Search {
     int m;
     int n;
 

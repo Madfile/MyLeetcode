@@ -46,5 +46,10 @@ public class Test {
         list.set(0, 1);
         list.add(0, 2);
         System.out.println(list);
+        Map<String, String> testMap = new HashMap<>();
+        testMap.getOrDefault("1", "1");
+        testMap.computeIfAbsent("1", v -> new String("5"));
+
+        System.out.println("a compare to b:" + "a".compareTo("b"));
     }
 }
