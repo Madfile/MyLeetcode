@@ -20,7 +20,7 @@ public class Leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses {
                     }
 
                     //char next = stack.poll();
-                    stack.poll();
+                    stack.pop();
                     result.add(c);
                 }
             }
