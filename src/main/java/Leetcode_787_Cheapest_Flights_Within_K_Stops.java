@@ -23,6 +23,7 @@ public class Leetcode_787_Cheapest_Flights_Within_K_Stops {
         //     }
         // });
 
+        //Use PriorityQueue when no step is limited - in this case the shortest path might not be able to reach the destination
         Queue<int[]> heap = new LinkedList<>();
 
         Map<Integer, Integer> cost = new HashMap<>();
