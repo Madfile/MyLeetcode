@@ -24,9 +24,7 @@ public class Leetcode_3_Longest_Substring_Without_Repeating_Characters {
                     }
                 }
 
-                if (newLength > length) {
-                    length = newLength;
-                }
+                length = Math.max(length, newLength);
             }
 
             return length;
