@@ -15,7 +15,7 @@ public class Leetcode_6099_Longest_Binary_Subsequence_Less_Than_or_Equal_to_K {
             for (int i = 0; i < s.length(); i++) {
                 if (s.charAt(i) == '1') {
                     sub.insert(sub.length() - i, '1');
-                    if (binaryToInteger(sub.toString()) > k) {
+                    if (check(sub.toString(), k)) {
                         return sub.length() - 1;
                     }
                 }
@@ -24,13 +24,14 @@ public class Leetcode_6099_Longest_Binary_Subsequence_Less_Than_or_Equal_to_K {
             return sub.length();
         }
 
-        public int binaryToInteger(String binary) {
+        public boolean check(String binary, int k) {
             char[] numbers = binary.toCharArray();
             int result = 0;
             for(int i=numbers.length - 1; i>=0; i--)
                 if(numbers[i]=='1')
                     result += Math.pow(2, (numbers.length-i - 1));
-            return result;
+            if (result > k) return true;
+            return false;
         }
     }
 }
