@@ -73,17 +73,58 @@ public class Test {
 ////        });
 //        int[][] stockPrices = new int[][]{{1,2},{2,4},{4,3},{3,2}};
 //        Arrays.sort(stockPrices, (a,b) -> a[0] - b[0]);
+//
+//        String a  = "123455";
+//        //char c = '1';
+//        for (char c: a.toCharArray()) {
+//            System.out.println(c);
+//        }
+//
+//        List<Integer[]> list = new ArrayList<>();
+//        //int[] intArray = new int[]{1};
+//        List<Integer> item = new ArrayList<>();
+//        item.add(1);
+//        list.add((Integer[])item.toArray());
+//
+//        PriorityQueue<int[]> heap = new PriorityQueue<>(new Comparator<int[]>() {
+//            @Override
+//            public int compare(int[] o1, int[] o2) {
+//                return o1[1] - o2[1];
+//            }
+//        });
+//
+        String binary = "11111111111111111111101100001111";
+        long decimal = Integer.parseInt(binary, 2);
+        System.out.println(decimal);
+//        StringBuilder sb = new StringBuilder();
+//        sb.append('a');
+//        sb.insert(sb.length() - 1, 'b');
 
-        String a  = "123455";
-        for (char c: a.toCharArray()) {
-            System.out.println(c);
+        //System.out.println(longestSubsequence("00101001", 1));
+    }
+    public static int longestSubsequence(String s, int k) {
+        StringBuilder sub = new StringBuilder();
+        for (char c: s.toCharArray()) {
+            if (c == '0') {
+                sub.append("0");
+            }
         }
 
-        List<Integer[]> list = new ArrayList<>();
-        //int[] intArray = new int[]{1};
-        List<Integer> item = new ArrayList<>();
-        item.add(1);
-        list.add((Integer[])item.toArray());
-    }
+        StringBuilder tmp =new StringBuilder(s);
+        tmp.reverse();
+        s =  tmp.toString();
 
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '1') {
+                sub.insert(sub.length() - i, '1');
+                if (Integer.parseInt(sub.toString(), 2) > k) {
+                    return sub.length() - 1;
+                }
+            }
+        }
+
+        return sub.length();
+    }
 }
+
+
