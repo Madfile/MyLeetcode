@@ -93,14 +93,18 @@ public class Test {
 //            }
 //        });
 //
-        String binary = "11111111111111111111101100001111";
-        long decimal = Integer.parseInt(binary, 2);
-        System.out.println(decimal);
+//        String binary = "11111111111111111111101100001111";
+//        long decimal = Integer.parseInt(binary, 2);
+//        System.out.println(decimal);
 //        StringBuilder sb = new StringBuilder();
 //        sb.append('a');
 //        sb.insert(sb.length() - 1, 'b');
 
         //System.out.println(longestSubsequence("00101001", 1));
+        int[]a = new int[]{1,5,5,6};
+        int index = Arrays.binarySearch(a, 0, 4, 5);
+
+        System.out.println(index);
     }
     public static int longestSubsequence(String s, int k) {
         StringBuilder sub = new StringBuilder();
